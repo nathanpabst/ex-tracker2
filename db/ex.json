@@ -1,0 +1,15 @@
+{
+  "ex-attributes": [
+    {
+      "name": "Trillian Astra",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Zooey_Deschanel_May_2014_%28cropped%29.png",
+      "age": 42,
+      "flaws": [
+        "lives on a different planet",
+        "Good at Math",
+        "Voted for the hyperspace bypass",
+        "Always beats me at Scrabble"
+      ]
+    }
+  ]  
+}
