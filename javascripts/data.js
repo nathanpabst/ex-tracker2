@@ -1,8 +1,10 @@
 const loadEx = require('./ex');
 const loadLocations = require('./locations');
+const writeEx = require('./exDom');
 
 const whenExLoads = (data) => {
   console.log('data', data);
+  $('#display-ex').append(dom.writeEx(data.ex));
 };
 
 const whenExDoesntLoad = (error) => {
