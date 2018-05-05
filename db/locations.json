@@ -1,0 +1,28 @@
+{
+  "locations": [
+    {
+      "name": "The Milky Way",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/ESO-VLT-Laser-phot-33a-07.jpg/218px-ESO-VLT-Laser-phot-33a-07.jpg",
+      "locationAddress": "42 Milky Way Boulevard",
+      "timeOfDay": "Morning"
+    },
+    {
+      "name": "The Megabrantis Cluster",
+      "imageURL": "https://vignette.wikia.nocookie.net/aliens/images/8/82/Vogsphere.jpg",
+      "locationAddress": "15 Megabrantis Circle",
+      "timeOfDay": "Afternoon"
+    },
+    {
+      "name": "Brantisvogan",
+      "imageURL": "https://media.podiant.co/spoke/leopard/undefined595fee2a29df1.jpg",
+      "locationAddress": "24 Brantisvogan Drive",
+      "timeOfDay": "Evening"
+    },
+    {
+      "name": "The Restaurant at the End of the Universe",
+      "imageURL": "http://www.cartoonaday.com/images/cartoons/2013/05/diner-end-of-the-universe-598x315.jpg",
+      "locationAddress": "42 Universe Parkway",
+      "timeOfDay": "After Dark"
+    }
+  ]  
+}
