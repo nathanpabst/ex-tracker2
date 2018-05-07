@@ -4,7 +4,7 @@
       "name": "The Milky Way",
       "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/ESO-VLT-Laser-phot-33a-07.jpg/218px-ESO-VLT-Laser-phot-33a-07.jpg",
       "locationAddress": "42 Milky Way Boulevard",
-      "timeOfDay": "Morning"
+      "timeOfDay": "AM"
     },
     {
       "name": "The Megabrantis Cluster",
@@ -22,7 +22,7 @@
       "name": "The Restaurant at the End of the Universe",
       "imageURL": "http://www.cartoonaday.com/images/cartoons/2013/05/diner-end-of-the-universe-598x315.jpg",
       "locationAddress": "42 Universe Parkway",
-      "timeOfDay": "After Dark"
+      "timeOfDay": "PM"
     }
   ]  
 }
