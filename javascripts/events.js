@@ -1,21 +1,16 @@
 const showAM = (e) => {
-  console.log(e.target);
-  showTime(e);
+  $('.time').not(":contains('AM')").closest('.location').hide();
+  $('.time').filter(":contains('AM')").closest('.location').show();
 };
 
-// const hideTime = () => {
-
-// };
-
-const showTime = (e) => {
-  const timeButton = $(e.target).closest('#location-cards');
-  // const collection = $('#location-cards').text();
-  // for (let i = 0; i < collection.length; i++) {
-  console.log('timeButton', timeButton);
+const showAfternoon = (e) => {
+  $('.time').not(":contains('afternoon')").closest('.location').hide();
+  $('.time').filter(":contains('afternoon')").closest('.location').show();
 };
 
 const bindEvents = () => {
   $('#am').on('click', showAM);
+  $('#afternoon').on('click', showAfternoon);
 };
 
 module.exports = bindEvents;
