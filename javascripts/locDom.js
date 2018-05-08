@@ -1,21 +1,16 @@
 const writeLocations = (locations) => {
-  let domString = '';
+  let output = '';
   locations.forEach((location) => {
-    domString += `<div class="col-sm-3 location">`;
-    domString +=  `<div class="panel">`;
-    domString +=    `<div class="panel-heading">`;
-    domString +=      `<h3 class="panel-title">${location.name}</h3>`;
-    domString +=    `</div>`;
-    domString +=  `</div>`;
-    domString +=  `<div class="panel-body">`;
-    domString +=    `<img class="location-photo" src="${location.imageURL}">`;
-    domString +=    `<h4>${location.locationAddress}</h4>`;
-    domString +=  `<div class="panel-footer">`;
-    domString += `<h4 class="time">${location.timeOfDay}</h4>`;
-    domString +=  `</div>`;
-    domString += `</div>`;
+    output += `<div class="col-md-3 location">
+                <h3 class="location-name">${location.name}</h3>
+                <img class="location-photo" src="${location.imageURL}">
+                <div class="caption">
+                <h3 id="thumbnail-label">${location.locationAddress}</h3>
+                <h4 class="time">${location.timeOfDay}</h4>
+                </div>
+              </div>`;
   });
-  return domString;
+  return output;
 };
 
 module.exports = writeLocations;
