@@ -1,0 +1,33 @@
+/* MAIN STYLES */
+body {}
+
+/* EX-CARD STYLES */
+
+/* FILTER BY TIME STYLES */
+.filter-btn {
+  margin: 30px;
+  padding: 12px 20px 12px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+/* LOCATION CARD STYLES */
+.location {
+  /* background-color: #504A4A; */
+  border: solid 1px black;
+  text-align: center;
+  height: 350px;
+  width: 350px;
+  display: inline-flex;
+  margin: 0 auto;
+  padding: 0 15px 30px 15px;
+}
+
+.location-photo {
+  width: 90%;
+  height: 90%;
+}
+.panel-footer {
+  background-color: #f0ad4e;
+  color:white;
+  padding: 15px;
+}
