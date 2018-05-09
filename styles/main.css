@@ -1,7 +1,36 @@
 /* MAIN STYLES */
-body {}
+body {
+  font-family: 'Shadows Into Light', cursive;
+  background-color: #1E8BC3;
+  color: white;
+}
+
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 28px;
+}
+p {
+  font-size: 24px;
+}
 
 /* EX-CARD STYLES */
+.ex-pic {
+  width: 270px;
+  height: 300px;
+  margin: 10px;
+}
+
+.ex {
+  margin: auto;
+  width: 65%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.ex-deets {
+  text-align: left;
+}
 
 /* FILTER BY TIME STYLES */
 .btn {
@@ -10,32 +39,28 @@ body {}
   font-size: 20px;
   border-radius: 10px;
 }
+
 /* LOCATION CARD STYLES */
 .col-sm-4 {
   padding: 0;
 }
 
-.row {
-  margin: 15px 0;
-}
-
 .location {
-  /* text-align: center; */
-  /* display: inline-flex; */
   margin: 10px;
-  width: 350px;
-  height: 355px;
+  width: 370px;
+  height: 370px;
   padding: 10px;
-  /* padding: 0 15px 30px 15px; */
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: black;
 }
 
 .location-photo {
   width: 275px;
   height: 200px;
 }
+
 .panel-footer {
-  background-color: #f0ad4e;
+  background-color: gray;
   color:white;
   padding: 15px;
+  font-size: 24px;
 }

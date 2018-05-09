@@ -1,14 +1,21 @@
 const writeEx = (exes) => {
-  let domString = '';
+  let output = '';
   exes.forEach((ex) => {
-    domString += `<div class="thumbnail">`;
-    domString +=   `<img src="${ex.imageURL}" alt="profile-pic">`;
-    domString +=   `<h3 id="thumbnail-label">NAME: ${ex.name}</h3>`;
-    domString +=   `<h3>AGE: ${ex.age}</h3>`;
-    domString +=   `<h3>FLAWS: ${ex.flaws}</h3>`;
-    domString += `</div>`;
+    output += `<div class="container-fluid">
+                <div class="row ex">
+                  <div class="col-sm-4 col-sm-offset-2 text-center">
+                    <img class="ex-pic" src="${ex.imageURL}" alt="profile-pic">
+                  </div>
+                  <div class="col-sm-4 ex-deets">  
+                    <h3>NAME: ${ex.name}</h3>
+                    <h3>AGE: ${ex.age}</h3>
+                    <h3>FLAWS: </h3>
+                    <p>${ex.flaws}</p>
+                  </div>
+                </div>    
+              </div>`;
   });
-  return domString;
+  return output;
 };
 
 module.exports = writeEx;
