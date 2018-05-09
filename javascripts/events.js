@@ -18,11 +18,26 @@ const showPM = (e) => {
   $('.time').filter(":contains('PM')").closest('.location').show();
 };
 
+jQuery.expr[':'].icontains = function (a, i, m) {
+  return jQuery(a).text().toUpperCase()
+    .indexOf(m[3].toUpperCase()) >= 0;
+};
+
+const searchBar = (e) => {
+  if (e.which === 13) {
+    const searchInput = $(e.target).val();
+    $(`#location-cards .location:not(:icontains(${searchInput}))`).hide();
+    $(e.target).val('');
+    console.log(typeof searchInput);
+  };
+};
+
 const bindEvents = () => {
   $('#am').on('click', showAM);
   $('#afternoon').on('click', showAfternoon);
   $('#evening').on('click', showEvening);
   $('#pm').on('click', showPM);
+  $('#search').keypress(searchBar);
 };
 
 module.exports = bindEvents;
