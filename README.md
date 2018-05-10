@@ -8,10 +8,13 @@ This application is used to help me avoid running into my 'ex'. When the user lo
 Concepts covered: HTML5, CSS3, Bootstrap, jQuery, JavaScript/ES6, JSON, AJAX, Node.JS/Grunt/Browserify, and DOM manipulation.
 
 ## Screenshots
+View of the page after loading. 
 ![View on page load](https://raw.githubusercontent.com/nathanpabst/ex-tracker2/b166f1917db5d727d24196a7ade35e5315a3507d/screenshots/Screen%20Shot%202018-05-10%20at%2011.30.12%20AM.png)
 
+View of results from the 'filter by time of day' feature. PM option selected.
 ![View of results from the 'filter by time of day' feature. PM option selected.](https://raw.githubusercontent.com/nathanpabst/ex-tracker2/b166f1917db5d727d24196a7ade35e5315a3507d/screenshots/Screen%20Shot%202018-05-10%20at%2011.31.16%20AM.png)
 
+View of search results for the number 42.
 ![View of search results for the number 42.](https://raw.githubusercontent.com/nathanpabst/ex-tracker2/b166f1917db5d727d24196a7ade35e5315a3507d/screenshots/Screen%20Shot%202018-05-10%20at%2011.32.06%20AM.png)
 
 ## How to Run
