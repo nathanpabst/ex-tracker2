@@ -28,7 +28,6 @@ const searchBar = (e) => {
     const searchInput = $(e.target).val();
     $(`#location-cards .location:not(:icontains(${searchInput}))`).hide();
     $(e.target).val('');
-    console.log(typeof searchInput);
   };
 };
 
