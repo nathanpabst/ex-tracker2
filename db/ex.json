@@ -1,18 +1,48 @@
 {
-  "ex": [
-    {
-      "name": "Trillian Astra",
-      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Zooey_Deschanel_May_2014_%28cropped%29.png",
-      "age": 42,
-      "flaws": [
-        "Travels too much", 
-        " Good at Math", 
-        " Well spoken",
-        " Great hair",
-        " Smells nice",
-        " Voted for the hyperspace bypass", 
-        " Left the party with Zaphod Beeblebrox instead of me"
-      ]
-    }
-  ]  
+	"ex": [{
+			"name": "Trillian Astra",
+			"imageURL": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Zooey_Deschanel_May_2014_%28cropped%29.png",
+			"age": 42,
+			"flaws": [
+				"vehophobic",
+				" peevish",
+				" well spoken",
+				" great hair",
+				" smells nice",
+				" fierce",
+				" practical"
+			],
+			"locations:": [2, 4, 6, 8]
+		},
+		{
+			"name": "Eccentrica Gallumbits",
+			"imageURL": "https://ia.media-imdb.com/images/M/MV5BMjE2ODI2MjY0OF5BMl5BanBnXkFtZTcwOTAzODU3OA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
+			"age": 42,
+			"flaws": [
+				"overzealous",
+				" paranoid",
+				" rigorous",
+				" senile",
+				" unlucky",
+				" overconfident",
+				" lewd"
+			],
+			"locations": [1, 3, 5, 7]
+		},
+		{
+			"name": "Dionah Carlinton Housney",
+			"imageURL": "https://ia.media-imdb.com/images/M/MV5BNDc5NTU2MzY0Nl5BMl5BanBnXkFtZTcwMzU4MjA0Ng@@._V1_SY1000_CR0,0,733,1000_AL_.jpg",
+			"age": 42,
+			"flaws": [
+				"Phobophobiac",
+				" smartass",
+				" theatrical",
+				" unpredictable",
+				" withdrawn",
+				" impish",
+				" gruff"
+			],
+			"locations": [1, 4, 7, 8]
+		}
+	]
 }

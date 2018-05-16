@@ -1,3 +1,4 @@
+// REFACTOR THE 'SHOW' FUNCTIONS INTO A SINGLE FUNCTION
 const showAM = (e) => {
   $('.time').not(":contains('AM')").closest('.location').hide();
   $('.time').filter(":contains('AM')").closest('.location').show();
