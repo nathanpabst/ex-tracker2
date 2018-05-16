@@ -4,15 +4,6 @@ const writeEx = require('./exDom');
 const writeLocations = require('./locDom');
 const bindEvents = require('./events');
 
-const whenExLoads = (data) => {
-  // console.log('data', data);
-  $('#display-ex').append(writeEx(data.ex));
-};
-
-const whenExDoesntLoad = (error) => {
-  console.error('error', error);
-};
-
 const whenLocationsLoad = (data) => {
   // console.log('data', data);
   $('#location-cards').append(writeLocations(data.locations));
@@ -23,7 +14,11 @@ const whenLocationsDontLoad = (error) => {
 };
 
 const initializer = () => {
-  loadEx(whenExLoads, whenExDoesntLoad);
+  loadEx().then((data) => {
+    $('#display-ex').append(writeEx(data.ex));
+  }).catch((error) => {
+    console.error('error', error);
+  });
   loadLocations(whenLocationsLoad, whenLocationsDontLoad);
   bindEvents();
 };

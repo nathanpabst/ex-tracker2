@@ -1,7 +1,7 @@
-const loadLocations = (loadFunction, errorFunction) => {
-  $.get('./db/locations.json')
-    .done(loadFunction)
-    .fail(errorFunction);
-};
+// const loadLocations = (loadFunction, errorFunction) => {
+//   $.get('./db/locations.json')
+//     .done(loadFunction)
+//     .fail(errorFunction);
+// };
 
-module.exports = loadLocations;
+// module.exports = loadLocations;
