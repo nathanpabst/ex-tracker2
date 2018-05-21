@@ -1,4 +1,4 @@
-const loadEx = () => {
+const loadAllExes = () => {
   return new Promise((resolve, reject) => {
     $.get('./db/ex.json')
       .done((data) => {
@@ -10,4 +10,19 @@ const loadEx = () => {
   });
 };
 
-module.exports = loadEx;
+const loadSingleEx = (id) => {
+  return new Promise((resolve, reject) => {
+    $.get('./db/ex.json')
+      .done((data) => {
+        resolve(data);
+      })
+      .fail((error) => {
+        reject('error, dang!', error);
+      });
+  });
+};
+
+module.exports = {
+  loadAllExes,
+  loadSingleEx,
+};

@@ -18,7 +18,7 @@ const showPM = (e) => {
   $('.time').not(":contains('PM')").closest('.location').hide();
   $('.time').filter(":contains('PM')").closest('.location').show();
 };
-
+// SEARCH FUNCTIONALITY
 jQuery.expr[':'].icontains = function (a, i, m) {
   return jQuery(a).text().toUpperCase()
     .indexOf(m[3].toUpperCase()) >= 0;
@@ -31,6 +31,15 @@ const searchBar = (e) => {
     $(e.target).val('');
   };
 };
+// END SEARCH FUNCTIONALITY
+
+const whichEx = () => {
+
+};
+
+const exButtons = (e) => {
+  $('.exButton').on('click', whichEx);
+};
 
 const bindEvents = () => {
   $('#am').on('click', showAM);
@@ -40,4 +49,7 @@ const bindEvents = () => {
   $('#search').keypress(searchBar);
 };
 
-module.exports = bindEvents;
+module.exports = {
+  bindEvents,
+  exButtons,
+};

@@ -1,12 +1,13 @@
-const loadEx = require('./ex');
+const loadAllExes = require('./ex');
 const loadLocations = require('./locations');
-const writeEx = require('./exDom');
+const writeAllExes = require('./exDom');
+// const writeOneEx = require('./singleExDom');
 const writeLocations = require('./locDom');
-const bindEvents = require('./events');
+const events = require('./events');
 
 const initializer = () => {
-  loadEx().then((data) => {
-    $('#display-ex').append(writeEx(data.ex));
+  loadAllExes().then((data) => {
+    $('#display-ex').append(writeAllExes(data.ex));
   }).catch((error) => {
     console.error('error', error);
   });
@@ -15,7 +16,7 @@ const initializer = () => {
   }).catch((error) => {
     console.error('error', error);
   });
-  bindEvents();
+  events.bindEvents();
 };
 
 module.exports = initializer;
