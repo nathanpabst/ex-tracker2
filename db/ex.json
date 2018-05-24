@@ -3,6 +3,7 @@
 			"name": "Trillian Astra",
 			"imageURL": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Zooey_Deschanel_May_2014_%28cropped%29.png",
 			"age": 42,
+			"id": 1,
 			"flaws": [
 				"vehophobic",
 				" peevish",
@@ -18,6 +19,7 @@
 			"name": "Eccentrica Gallumbits",
 			"imageURL": "https://ia.media-imdb.com/images/M/MV5BMjE2ODI2MjY0OF5BMl5BanBnXkFtZTcwOTAzODU3OA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
 			"age": 42,
+			"id": 2,
 			"flaws": [
 				"overzealous",
 				" paranoid",
@@ -33,6 +35,7 @@
 			"name": "Dionah Carlinton Housney",
 			"imageURL": "https://ia.media-imdb.com/images/M/MV5BNDc5NTU2MzY0Nl5BMl5BanBnXkFtZTcwMzU4MjA0Ng@@._V1_SY1000_CR0,0,733,1000_AL_.jpg",
 			"age": 42,
+			"id": 3,
 			"flaws": [
 				"Phobophobiac",
 				" smartass",

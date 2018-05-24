@@ -1,24 +1,23 @@
-// REFACTOR THE 'SHOW' FUNCTIONS INTO A SINGLE FUNCTION
-const showAM = (e) => {
-  $('.time').not(":contains('AM')").closest('.location').hide();
-  $('.time').filter(":contains('AM')").closest('.location').show();
+const timeOfDayBtns = (e) => {
+  $(document).click((e) => {
+    // console.log('from events', e.target.id);
+    if (e.target.id === 'am') {
+      $('.time').not(":contains('AM')").closest('.location').hide();
+      $('.time').filter(":contains('AM')").closest('.location').show();
+    } else if (e.target.id === 'afternoon') {
+      $('.time').not(":contains('Afternoon')").closest('.location').hide();
+      $('.time').filter(":contains('Afternoon')").closest('.location').show();
+    } else if (e.target.id === 'evening') {
+      $('.time').not(":contains('Evening')").closest('.location').hide();
+      $('.time').filter(":contains('Evening')").closest('.location').show();
+    } else if (e.target.id === 'pm') {
+      $('.time').not(":contains('PM')").closest('.location').hide();
+      $('.time').filter(":contains('PM')").closest('.location').show();
+    };
+  });
 };
 
-const showAfternoon = (e) => {
-  $('.time').not(":contains('Afternoon')").closest('.location').hide();
-  $('.time').filter(":contains('Afternoon')").closest('.location').show();
-};
-
-const showEvening = (e) => {
-  $('.time').not(":contains('Evening')").closest('.location').hide();
-  $('.time').filter(":contains('Evening')").closest('.location').show();
-};
-
-const showPM = (e) => {
-  $('.time').not(":contains('PM')").closest('.location').hide();
-  $('.time').filter(":contains('PM')").closest('.location').show();
-};
-
+// SEARCH FUNCTIONALITY
 jQuery.expr[':'].icontains = function (a, i, m) {
   return jQuery(a).text().toUpperCase()
     .indexOf(m[3].toUpperCase()) >= 0;
@@ -31,13 +30,33 @@ const searchBar = (e) => {
     $(e.target).val('');
   };
 };
+// END SEARCH FUNCTIONALITY
 
-const bindEvents = () => {
-  $('#am').on('click', showAM);
-  $('#afternoon').on('click', showAfternoon);
-  $('#evening').on('click', showEvening);
-  $('#pm').on('click', showPM);
-  $('#search').keypress(searchBar);
+//   const button = $('.exButton');
+//   for (let i = 0; i < button.length; i++) {
+//     button[i].on('click', (e) => {
+//       console.log('from events', e);
+//     });
+//   };
+// };
+const whichEx = () => {
+  $('.exButton').on('click', (e) => {
+    const button = '';
+    for (let i = 0; i < button.length; i++) {
+      console.log('from events', button[i]);
+    };
+  });
 };
 
-module.exports = bindEvents;
+const bindEvents = () => {
+  $('#am').on('click', timeOfDayBtns);
+  $('#afternoon').on('click', timeOfDayBtns);
+  $('#evening').on('click', timeOfDayBtns);
+  $('#pm').on('click', timeOfDayBtns);
+  $('#search').keypress(searchBar);
+  whichEx();
+};
+
+module.exports = {
+  bindEvents,
+};
