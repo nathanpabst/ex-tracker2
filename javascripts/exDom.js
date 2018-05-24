@@ -1,8 +1,3 @@
-// search button by class name 'exButton'
-// add ids to ex.json
-
-// const events = require('./events');
-
 const writeAllExes = (exes) => {
   let output = '';
   exes.forEach((ex) => {

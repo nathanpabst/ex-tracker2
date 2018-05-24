@@ -8,6 +8,7 @@ const events = require('./events');
 const initializer = () => {
   loadAllExes().then((data) => {
     $('#display-ex').append(writeAllExes(data));
+    events.bindEvents();
   }).catch((error) => {
     console.error('error', error);
   });
@@ -16,7 +17,6 @@ const initializer = () => {
   }).catch((error) => {
     console.error('error', error);
   });
-  events.bindEvents();
 };
 
 module.exports = initializer;

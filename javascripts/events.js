@@ -32,20 +32,8 @@ const searchBar = (e) => {
 };
 // END SEARCH FUNCTIONALITY
 
-//   const button = $('.exButton');
-//   for (let i = 0; i < button.length; i++) {
-//     button[i].on('click', (e) => {
-//       console.log('from events', e);
-//     });
-//   };
-// };
-const whichEx = () => {
-  $('.exButton').on('click', (e) => {
-    const button = '';
-    for (let i = 0; i < button.length; i++) {
-      console.log('from events', button[i]);
-    };
-  });
+const whichEx = (e) => {
+  console.log('from events', e.target);
 };
 
 const bindEvents = () => {
@@ -54,7 +42,7 @@ const bindEvents = () => {
   $('#evening').on('click', timeOfDayBtns);
   $('#pm').on('click', timeOfDayBtns);
   $('#search').keypress(searchBar);
-  whichEx();
+  $('.exButton').on('click', whichEx);
 };
 
 module.exports = {
