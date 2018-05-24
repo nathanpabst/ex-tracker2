@@ -1,4 +1,3 @@
-// REFACTOR THE 'SHOW' FUNCTIONS INTO A SINGLE FUNCTION
 const timeOfDayBtns = (e) => {
   $(document).click((e) => {
     // console.log('from events', e.target.id);
@@ -33,12 +32,20 @@ const searchBar = (e) => {
 };
 // END SEARCH FUNCTIONALITY
 
+//   const button = $('.exButton');
+//   for (let i = 0; i < button.length; i++) {
+//     button[i].on('click', (e) => {
+//       console.log('from events', e);
+//     });
+//   };
+// };
 const whichEx = () => {
-
-};
-
-const exButtons = (e) => {
-  $('.exButton').on('click', whichEx);
+  $('.exButton').on('click', (e) => {
+    const button = '';
+    for (let i = 0; i < button.length; i++) {
+      console.log('from events', button[i]);
+    };
+  });
 };
 
 const bindEvents = () => {
@@ -47,9 +54,9 @@ const bindEvents = () => {
   $('#evening').on('click', timeOfDayBtns);
   $('#pm').on('click', timeOfDayBtns);
   $('#search').keypress(searchBar);
+  whichEx();
 };
 
 module.exports = {
   bindEvents,
-  exButtons,
 };

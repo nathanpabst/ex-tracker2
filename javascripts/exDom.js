@@ -16,7 +16,7 @@ const writeAllExes = (exes) => {
                         <h3>AGE: ${ex.age}</h3>
                         <h3>FLAWS: </h3>
                         <p>${ex.flaws}</p>
-                        <p><a id="${ex.id}" href="#" class="btn btn-primary exButton" role="button">View</a>
+                        <p><button id="${ex.id}" class="btn btn-primary exButton">View</button>
                       </div>
                     </div>
                   </div>
@@ -24,7 +24,6 @@ const writeAllExes = (exes) => {
               </div>`;
   });
   return output;
-// events.exButtons();
 };
 
 module.exports = writeAllExes;

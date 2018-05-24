@@ -7,7 +7,7 @@ const events = require('./events');
 
 const initializer = () => {
   loadAllExes().then((data) => {
-    $('#display-ex').append(writeAllExes(data.ex));
+    $('#display-ex').append(writeAllExes(data));
   }).catch((error) => {
     console.error('error', error);
   });
