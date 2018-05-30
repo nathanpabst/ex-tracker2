@@ -1,3 +1,5 @@
+const ex = require('./ex');
+
 const timeOfDayBtns = (e) => {
   $(document).click((e) => {
     // console.log('from events', e.target.id);
@@ -33,7 +35,10 @@ const searchBar = (e) => {
 // END SEARCH FUNCTIONALITY
 
 const whichEx = (e) => {
-  console.log('from events', e.target);
+  console.log('from events', e.target.id);
+  // if (e.target.id === 1) {
+  // }
+  ex.loadSingleEx(e.target.id);
 };
 
 const bindEvents = () => {
