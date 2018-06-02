@@ -24,17 +24,21 @@
 
   <div id="display-ex" class="text-center"></div>
 
-  <div id="singleEx"></div>
-
-  <h2>FILTER BY TIME OF DAY</h2>
-  <div class="btn-group" role="group" aria-label="...">
-    <button type="button" id="am" class="btn btn-primary">AM</button>
-    <button type="button" id="afternoon" class="btn btn-success">Afternoon</button>
-    <button type="button" id="evening" class="btn btn-info">Evening</button>
-    <button type="button" id="pm" class="btn btn-warning">PM</button>
+  <div id="singleEx">
+    <div class="singleLocationCards"></div>
   </div>
 
-  <div class="row">
+  <div class="filterByTime">
+    <h2>FILTER BY TIME OF DAY</h2>
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" id="am" class="btn btn-primary">AM</button>
+      <button type="button" id="afternoon" class="btn btn-success">Afternoon</button>
+      <button type="button" id="evening" class="btn btn-info">Evening</button>
+      <button type="button" id="pm" class="btn btn-warning">PM</button>
+    </div>
+  </div>
+
+  <div class="row searchByLocation">
     <div class="col-sm-4 col-sm-offset-4">
       <h2>SEARCH BY LOCATION</h2>
       <input id="search" type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon1">

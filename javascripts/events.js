@@ -1,8 +1,8 @@
 const ex = require('./ex');
+const main = require('./main');
 
 const timeOfDayBtns = (e) => {
   $(document).click((e) => {
-    // console.log('from events', e.target.id);
     if (e.target.id === 'am') {
       $('.time').not(":contains('AM')").closest('.location').hide();
       $('.time').filter(":contains('AM')").closest('.location').show();
@@ -35,10 +35,8 @@ const searchBar = (e) => {
 // END SEARCH FUNCTIONALITY
 
 const whichEx = (e) => {
-  console.log('from events', e.target.id);
-  // if (e.target.id === 1) {
-  // }
-  ex.loadSingleEx(e.target.id);
+  const exId = e.target.id - 1;
+  ex.loadSingleEx(exId);
 };
 
 const bindEvents = () => {
@@ -48,8 +46,10 @@ const bindEvents = () => {
   $('#pm').on('click', timeOfDayBtns);
   $('#search').keypress(searchBar);
   $('.exButton').on('click', whichEx);
+  $('.backButton').on('click', main.initializer);
 };
 
 module.exports = {
   bindEvents,
+  whichEx,
 };
