@@ -1,7 +1,6 @@
-const writeSingleEx = (deets) => {
+const writeSingleEx = (deet) => {
   let output = '';
-  deets.forEach((deet) => {
-    output += `<div class="container-fluid">
+  output += `<div class="container-fluid">
                 <div class="row ex">
                   <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
@@ -17,7 +16,6 @@ const writeSingleEx = (deets) => {
                   </div>
                 </div>
               </div>`;
-  });
   return output;
 };
 
