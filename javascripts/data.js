@@ -1,26 +1,26 @@
-const ex = require('./ex');
-const loadLocations = require('./locations');
-const writeAllExes = require('./exDom');
-// const writeSingleEx = require('./singleExDom');
-// const exDom = require('./exDom');
-const writeLocations = require('./locDom');
+const {loadAllExes,} = require('./ex');
+const {loadSingleEx,} = require('./ex');
+const {loadLocations,} = require('./locations');
+const {writeAllExes,} = require('./exDom');
+const {writeSingleEx,} = require('./singleExDom');
+const {writeLocations,} = require('./locDom');
 const events = require('./events');
 
-// const singleExInit = () => {
-//   ex.loadSingleEx().then((data) => {
-//     $('#singleEx').append(writeSingleEx(data.ex));
-//   }).catch((error) => {
-//     console.error('error loading single ex', error);
-//   });
-//   loadLocations().then((data) => {
-//     $('.singleLocationCards').append(writeLocations(data.locations));
-//   }).catch((error) => {
-//     console.error('error loading locations', error);
-//   });
-// };
+const singleExInit = (exId) => {
+  loadSingleEx().then((data) => {
+    $('#singleEx').append(writeSingleEx(data.ex));
+  }).catch((error) => {
+    console.error('error loading single ex', error);
+  });
+  loadLocations().then((data) => {
+    $('.singleLocationCards').append(writeLocations(data.locations));
+  }).catch((error) => {
+    console.error('error loading locations', error);
+  });
+};
 
 const initializer = () => {
-  ex.loadAllExes().then((data) => {
+  loadAllExes().then((data) => {
     $('#display-ex').append(writeAllExes(data));
     events.bindEvents();
   }).catch((error) => {
@@ -35,4 +35,5 @@ const initializer = () => {
 
 module.exports = {
   initializer,
+  singleExInit,
 };

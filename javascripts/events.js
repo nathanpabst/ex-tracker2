@@ -1,4 +1,5 @@
-const ex = require('./ex');
+// const {loadSingleEx,} = require('./ex');
+const {singleExInit,} = require('./data');
 const main = require('./main');
 
 const timeOfDayBtns = (e) => {
@@ -36,7 +37,8 @@ const searchBar = (e) => {
 
 const whichEx = (e) => {
   const exId = e.target.id - 1;
-  ex.loadSingleEx(exId);
+  // loadSingleEx(exId);
+  singleExInit(exId);
 };
 
 const bindEvents = () => {

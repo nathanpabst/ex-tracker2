@@ -16,6 +16,7 @@ const loadSingleEx = (id) => {
       .done((data) => {
         resolve(data.ex[id]);
         // console.log('from ex', data.ex[id]);
+
       })
       .fail((error) => {
         reject('error, dang!', error);

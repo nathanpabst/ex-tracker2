@@ -1,4 +1,4 @@
-const initializer = require('./data');
+const {initializer,} = require('./data');
 
 $(document).ready(() => {
   initializer();
