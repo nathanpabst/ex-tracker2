@@ -1,5 +1,5 @@
 const dataFuncs = require('./data');
-const main = require('./main');
+// const main = require('./main');
 
 const timeOfDayBtns = (e) => {
   $(document).click((e) => {
@@ -46,7 +46,6 @@ const bindEvents = () => {
   $('#pm').on('click', timeOfDayBtns);
   $('#search').keypress(searchBar);
   $('.exButton').on('click', whichEx);
-  $('.backButton').on('click', main.initializer);
 };
 
 const showSingleExEvent = () => {
@@ -57,8 +56,13 @@ const showSingleExEvent = () => {
   $('#location-cards').addClass('hide');
 };
 
+const backButtonEvent = () => {
+  $(document).on('click', '.backButton', dataFuncs.initializer);
+};
+
 module.exports = {
   bindEvents,
   whichEx,
   showSingleExEvent,
+  backButtonEvent,
 };

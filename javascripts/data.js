@@ -3,7 +3,7 @@ const loadLocations = require('./locations');
 const {writeAllExes,} = require('./exDom');
 const {writeSingleEx,} = require('./singleExDom');
 const writeLocations = require('./locDom');
-const {bindEvents, showSingleExEvent,} = require('./events');
+const {bindEvents, showSingleExEvent, backButtonEvent,} = require('./events');
 
 exports.singleExInit = (exId) => {
   let exLocationIds;
@@ -23,6 +23,7 @@ exports.singleExInit = (exId) => {
     });
     $('.singleLocationCards').append(writeLocations(exLocations));
     showSingleExEvent();
+    backButtonEvent();
   }).catch((error) => {
     console.error('error loading locations', error);
   });
