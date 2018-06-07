@@ -1,6 +1,8 @@
+const dataFuncs = require('./data');
+const main = require('./main');
+
 const timeOfDayBtns = (e) => {
   $(document).click((e) => {
-    // console.log('from events', e.target.id);
     if (e.target.id === 'am') {
       $('.time').not(":contains('AM')").closest('.location').hide();
       $('.time').filter(":contains('AM')").closest('.location').show();
@@ -33,7 +35,8 @@ const searchBar = (e) => {
 // END SEARCH FUNCTIONALITY
 
 const whichEx = (e) => {
-  console.log('from events', e.target);
+  const exId = e.target.id - 1;
+  dataFuncs.singleExInit(exId);
 };
 
 const bindEvents = () => {
@@ -43,8 +46,19 @@ const bindEvents = () => {
   $('#pm').on('click', timeOfDayBtns);
   $('#search').keypress(searchBar);
   $('.exButton').on('click', whichEx);
+  $('.backButton').on('click', main.initializer);
+};
+
+const showSingleExEvent = () => {
+  $('#display-ex').addClass('hide');
+  $('#singleEx').removeClass('hide');
+  $('.filterByTime').addClass('hide');
+  $('.searchByLocation').addClass('hide');
+  $('#location-cards').addClass('hide');
 };
 
 module.exports = {
   bindEvents,
+  whichEx,
+  showSingleExEvent,
 };

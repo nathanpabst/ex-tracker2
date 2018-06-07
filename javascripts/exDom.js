@@ -21,4 +21,6 @@ const writeAllExes = (exes) => {
   return output;
 };
 
-module.exports = writeAllExes;
+module.exports = {
+  writeAllExes,
+};
