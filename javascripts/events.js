@@ -1,4 +1,3 @@
-// const {loadSingleEx,} = require('./ex');
 const dataFuncs = require('./data');
 const main = require('./main');
 
@@ -37,7 +36,6 @@ const searchBar = (e) => {
 
 const whichEx = (e) => {
   const exId = e.target.id - 1;
-  // loadSingleEx(exId);
   dataFuncs.singleExInit(exId);
 };
 
@@ -51,7 +49,16 @@ const bindEvents = () => {
   $('.backButton').on('click', main.initializer);
 };
 
+const showSingleExEvent = () => {
+  $('#display-ex').addClass('hide');
+  $('#singleEx').removeClass('hide');
+  $('.filterByTime').addClass('hide');
+  $('.searchByLocation').addClass('hide');
+  $('#location-cards').addClass('hide');
+};
+
 module.exports = {
   bindEvents,
   whichEx,
+  showSingleExEvent,
 };
