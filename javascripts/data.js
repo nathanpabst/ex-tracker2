@@ -2,7 +2,7 @@ const {loadAllExes, loadSingleEx,} = require('./ex');
 const loadLocations = require('./locations');
 const {writeAllExes,} = require('./exDom');
 const {writeSingleEx,} = require('./singleExDom');
-const writeLocations = require('./locDom');
+const {writeLocations, writeSingleLocations,} = require('./locDom');
 const {bindEvents, showSingleExEvent, backButtonEvent,} = require('./events');
 
 exports.singleExInit = (exId) => {
@@ -19,9 +19,10 @@ exports.singleExInit = (exId) => {
     locations.locations.forEach(location => {
       if (exLocationIds.includes(location.locationId)) {
         exLocations.push(location);
+        console.log('from data', exLocations);
       }
     });
-    $('.singleLocationCards').append(writeLocations(exLocations));
+    $('.singleLocationCards').append(writeSingleLocations(exLocations));
     showSingleExEvent();
     backButtonEvent();
   }).catch((error) => {

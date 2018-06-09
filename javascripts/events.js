@@ -53,8 +53,8 @@ const showSingleExEvent = () => {
   $('#singleEx').removeClass('hide');
   $('.filterByTime').addClass('hide');
   $('.searchByLocation').addClass('hide');
-  // $('#location-cards').addClass('hide');
-  // $('#singleLocationCards').removeClass('hide');
+  $('#location-cards').addClass('hide');
+  $('#singleLocationCards').removeClass('hide');
 };
 
 const showAllExes = () => {
