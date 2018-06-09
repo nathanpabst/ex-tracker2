@@ -6,20 +6,26 @@ body {
 }
 
 h1 {
-  font-size: 42px;
-  padding-left: 500px;
+  font-size: 84px;
+  padding-left: 300px;
 }
 h2 {
-  font-size: 28px;
+  font-size: 42px;
 }
 p {
   font-size: 24px;
 }
 
 /* EX-CARD STYLES */
+.thumbnail {
+  height: 600px;
+  width: 500px;
+  margin: 0 auto;
+}
+
 .ex-pic {
-  width: 270px;
-  height: 300px;
+  max-width: 270px;
+  max-height: 270px;
   margin: 10px;
   border: solid white;
 }
@@ -73,6 +79,14 @@ p {
   width: 275px;
   height: 200px;
   margin: 3px;
+}
+
+.singleLocation {
+  margin: 10px;
+  width: 370px;
+  height: 370px;
+  padding: 10px;
+  color: black;
 }
 
 .panel-footer {
