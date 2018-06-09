@@ -1,7 +1,5 @@
 const writeLocations = (locations) => {
   let output = '';
-  output += `<div class="container-fluid">`;
-  output +=   `<div class="row">`;
   locations.forEach((location) => {
     output +=     `<div class="col-sm-4 location">`;
     output +=            `<div class="panel">`;
@@ -11,7 +9,6 @@ const writeLocations = (locations) => {
     output +=            `<div class="panel-footer time">${location.timeOfDay}</div>`;
     output +=          `</div>`;
     output +=        `</div>`;
-    output +=      `</div>`;
   });
   return output;
 };
