@@ -13,7 +13,7 @@
 				" fierce",
 				" practical"
 			],
-			"locations": [2, 4, 6, 8]
+			"locations": ["milliways", "library"]
 		},
 		{
 			"name": "Eccentrica Gallumbits",
@@ -29,7 +29,7 @@
 				" overconfident",
 				" lewd"
 			],
-			"locations": [1, 3, 5, 7]
+			"locations": ["megabrantis", "frugals"]
 		},
 		{
 			"name": "Dionah Carlinton Housney",

@@ -1,7 +1,7 @@
 const writeLocations = (locations) => {
   let output = '';
   locations.forEach((location) => {
-    output +=     `<div class="col-sm-4 location">`;
+    output +=     `<div class="col-sm-4 location" id="${location.id}">`;
     output +=            `<div class="panel">`;
     output +=              `<img class="location-photo" src="${location.imageURL}">`;
     output +=              `<h3>${location.name}</h3>`;
