@@ -9,7 +9,7 @@ exports.singleExInit = (exId) => {
   let exLocationIds;
   loadSingleEx(exId).then((singleEx) => {
     exLocationIds = singleEx.locations;
-    $('#singleEx').append(writeSingleEx(singleEx));
+    $('#singleEx').html(writeSingleEx(singleEx));
   }).catch((error) => {
     console.error('error loading single ex', error);
   });
@@ -22,7 +22,7 @@ exports.singleExInit = (exId) => {
         console.log('from data', exLocations);
       }
     });
-    $('.singleLocationCards').append(writeSingleLocations(exLocations));
+    $('#singleLocationCards').html(writeSingleLocations(exLocations));
     showSingleExEvent();
     backButtonEvent();
   }).catch((error) => {

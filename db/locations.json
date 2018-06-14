@@ -1,56 +1,56 @@
 {
   "locations": [
     {
-      "locationId": 1,
+      "locationId": "milky-way",
       "name": "The Milky Way",
       "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/ESO-VLT-Laser-phot-33a-07.jpg/218px-ESO-VLT-Laser-phot-33a-07.jpg",
       "locationAddress": "42 Milky Way Boulevard",
       "timeOfDay": "AM"
     },
     {
-      "locationId": 2,
+      "locationId": "anytime-fit",
       "name": "Anytime Fitness",
       "imageURL": "http://blog.newinhomes.com/wp-content/uploads/2014/09/Oct-02-3791-Gym-4000-642x336.jpg",
       "locationAddress": "5513 Edmondson Pike",
       "timeOfDay": "Afternoon"
     },
     {
-      "locationId": 3,
+      "locationId": "brantisvogan",
       "name": "Brantisvogan",
       "imageURL": "https://media.podiant.co/spoke/leopard/undefined595fee2a29df1.jpg",
       "locationAddress": "24 Brantisvogan Drive",
       "timeOfDay": "Evening"
     },
     {
-      "locationId": 4,
+      "locationId": "bronx",
       "name": "Bronx Zoo",
       "imageURL": "https://i.pinimg.com/originals/3a/ae/c8/3aaec80080ec58de2243d1e81baa43c8.jpg",
       "locationAddress": "1101 Broadway",
       "timeOfDay": "PM"
     },
     {
-      "locationId": 5,
+      "locationId": "frugals",
       "name": "Frugal MacDoogal",
       "imageURL": "https://www.charlottefive.com/wp-content/uploads/2015/08/IMG_1312-e1440449928437.jpg",
       "locationAddress": "701 Division Street",
       "timeOfDay": "AM"
     },
     {
-      "locationId": 6,
+      "locationId": "megabrantis",
       "name": "The Megabrantis Cluster",
       "imageURL": "https://vignette.wikia.nocookie.net/aliens/images/8/82/Vogsphere.jpg",
       "locationAddress": "15 Megabrantis Circle",
       "timeOfDay": "Afternoon"
     },
     {
-      "locationId": 7,
+      "locationId": "library",
       "name": "Library",
       "imageURL": "https://media5.trover.com/T/5811024d74a3516a300549d9/fixedw_large_4x.jpg",
       "locationAddress": "14 W 10th Street",
       "timeOfDay": "Evening"
     },
     {
-      "locationId": 8,
+      "locationId": "milliways",
       "name": "Milliways",
       "imageURL": "http://www.cartoonaday.com/images/cartoons/2013/05/diner-end-of-the-universe-598x315.jpg",
       "locationAddress": "42 Universe Parkway",

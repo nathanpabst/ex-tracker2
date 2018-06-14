@@ -63,12 +63,11 @@ const showAllExes = () => {
   $('.filterByTime').removeClass('hide');
   $('.searchByLocation').removeClass('hide');
   $('#location-cards').removeClass('hide');
-  // $('#singleLocationCards').addClass('hide');
+  $('#singleLocationCards').addClass('hide');
 };
 
 const backButtonEvent = () => {
   $(document).on('click', '.backButton', () => {
-    dataFuncs.initializer();
     showAllExes();
   });
 };
