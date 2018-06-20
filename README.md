@@ -25,6 +25,8 @@ View of search results for the number 42.
 View when clicking on an ex.
 ![View when clicking on an ex.](https://raw.githubusercontent.com/nathanpabst/ex-tracker2/e4991ece857fa223d11340aa828a8a7c6f4925b1/screenshots/Screen%20Shot%202018-06-14%20at%206.59.07%20PM.png)
 
+## Firebase Deploy
+Hosting site: https://ex-tracker-eca54.firebaseapp.com
 
 ## How to Run
 1. Clone down this repo and cd into project
