@@ -1,0 +1,10 @@
+{
+  "firebase": {
+    "apiKey": "AIzaSyCzCenKGFQZ7aBGIFoNSMfJolmnI3a3YLk",
+    "authDomain": "ex-tracker-eca54.firebaseapp.com",
+    "databaseURL": "https://ex-tracker-eca54.firebaseio.com",
+    "projectId": "ex-tracker-eca54",
+    "storageBucket": "",
+    "messagingSenderId": "966020093081"
+  }
+}
