@@ -1,5 +1,4 @@
 const dataFuncs = require('./data');
-// const main = require('./main');
 
 const timeOfDayBtns = (e) => {
   $(document).click((e) => {
